@@ -1,17 +1,116 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Praktika</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, css, tags">
+    <meta name="description" content="Это мой сайт для практики html+css">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Дмитрий Бахов</h1>
-  <p><em>Я учусь программировать и это мой тестовый сайт</em></p>
-  <p>Здесь я буду <strong>тренироваться</strong> использовать различные элементы</p>
-  <p>Люблю заниматься спортом, общаться с девочками, смотреть видяусы на ютубе</p>
-<hr>
+    <div class="container">
+        <div class="info">
+            <div class="box-img">
+                <img src="11.jpg" alt="Фотография моего лица" width="200">
+            </div>
+            
+            <div class="info-text">
+                <h1>Дмитрий Бахов</h1>
 
+                <p>Закончил СФУ по профессии <strong>Горный инженер технолог</strong>. Пробовал себя в профессии шахтера, мерчендайзера, повара в пиццерии. Пробовал развивать свой <strong>ютуб канал</strong>. Сейчас осваиваю новую для меня рофессию <strong><em>программирования</em></strong></p>
 
+                <p>Занимаюсь <em>спортом</em>, люблю вкусно <em>покушать</em> (<strong>и сам неплохо готовлю</strong>), смотреть ютуб, фильмы, <strong>твич</strong>, слушать музыку</p><br>
+
+                <hr>
+
+                <p><strong>Список социальных сетей:</strong></p><br>
+
+                <a href="https://www.instagram.com/dima_bhf" target="_blank">Instagram</a>
+                |
+                <a href="https://t.me/dimabhf" target="_blank">Telegram</a>
+                |
+                <a href="https://vk.com/dimabakhov" target="_blank">VK</a>
+                |
+                <a href="https://www.youtube.com/channel/UCnvdVCI0ji-jUnlkszOlvbg" target="_blank">Youtube</a>
+
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>  
+
+        <div class="card-h">
+            <h2>Мои хобби</h2>
+
+            <ul>
+                <li>Просмотр сериалов</li>
+                <li>Спорт</li>
+                <li>Игры</li>
+                <li>Монтаж видео</li>
+            </ul>
+        </div>
+
+        <div class="card-job">
+            <h2>Опыт работы</h2>
+
+            <table>
+                <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Должность</th>
+                    <th>Год</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Норникель</td>
+                    <td>Помощник бригадира</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>FixPrice</td>
+                    <td>Мерчендайзер</td>
+                    <td>2019</td>
+                </tr>
+                <tr>
+                    <td>NinjaPizza</td>
+                    <td>Пиццамейкер</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>BlazingBoost</td>
+                    <td>Бустер</td>
+                    <td>2021</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card-m">
+            <h2>Связаться со мной</h2>
+
+            <form action="">
+                <div>
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+
+                <div>
+                    <label for="email">Ваш emali:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+
+                <div>
+                    <label for="message">Ваше сообщение:</label>
+                    <br>
+                    <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+                </div>
+
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </div>
+    </div>
 </body>
-
 </html>
