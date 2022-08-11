@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form</h1>
+
+    <form action="">
+        
+        <div>
+            <label for="text2">Текст</label>
+            <input type="text" id="text2" value="Пиши давай уже">
+        </div>
+        
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Введите email">
+        </div>
+
+        <div>
+            <label for="password">Пароль</label>
+            <input type="password" id="password">
+        </div>
+
+        <div>
+            <label for="number">Номер</label>
+            <input type="number" id="number" min="0">
+        </div>
+    
+        <div>
+            <label for="range">Ползунок</label>
+            <input type="range" id="range" min="0" max="10" step="1"> 
+        </div>
+
+        <div>
+            <label for="date">Дата</label>
+            <input type="date" id="date">
+        </div>
+
+        <div>
+            <label for="color">Цвет</label>
+            <input type="color" id="color">
+        </div>
+
+        <div>
+            <label for="message">Сообщение</label>
+            <br>
+            <textarea id="message" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <label for="sex">Ваш пол</label>
+            <select id="sex">
+                <option value="male" selected>Мужчина</option>
+                <option value="female">Женщина</option>
+                <option value="other">Другое</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Количество работ</label>
+            <input type="radio" name="work"> 1
+            <input type="radio" name="work"> 2
+            <input type="radio" name="work"> 5
+            <input type="radio" name="work"> 7+
+        </div>
+
+        <div>
+            <label>Любимая еда</label>
+            <input type="checkbox" name="food"> Картошка
+            <input type="checkbox" name="food"> Курица
+            <input type="checkbox" name="food"> Салатик
+            <input type="checkbox" name="food"> Суп
+        </div>
+
+        <button type="submit">Отправить данные</button>
+    </form>
+</body>
+</html>
