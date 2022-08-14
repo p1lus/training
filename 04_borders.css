@@ -1,0 +1,31 @@
+.border-1 {
+  /* border-width: 2px;
+  border-style: solid;
+  border-color: darkred; */
+
+  border: 2px solid darkcyan;
+  border-radius: 5px;
+  /* border-style: dashed; - всё останется, но станет прерывистой */
+}
+
+/* bottom top left right */
+.border-2 {
+  border-bottom: 2px solid darkmagenta;
+  border-right: 4px solid royalblue;
+
+  border-bottom-left-radius: 10px;
+}
+
+.border-3 {
+  border-left: 10px solid darkgoldenrod;
+  background: lightsalmon;
+  padding-left: 10px;
+  color: black;
+}
+
+/* .circle {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border-radius: 50%;
+} */
