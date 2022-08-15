@@ -1,0 +1,46 @@
+a {
+  color: black;
+  text-decoration: none;
+  /* ^ убрать линию внизу */
+  /* transition: all .2s; */
+  /* ^ анимация */
+}
+
+/* psevdo selector (псевдоселектор для всех элементов)*/
+a:hover {
+  color: aqua;
+  /* font-size: 30px; */
+}
+
+/* только для ссылок псевдоселектор */
+a:visited {
+  /* color: red; */
+  /* подсвечивает красным ту ссылку по которой уже перешёл */
+}
+
+a:active {
+  color: blue;
+  /* подсвечивает ссылку синим когда зажал на неё */
+}
+
+.css:hover {
+  background: darkcyan;
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin: 10px 15px;
+  border: none;
+  background: darkolivegreen;
+  color: white;
+  cursor: pointer;
+  /* когда наводишь мышку - она меняется на палец */
+  font-family: inherit;
+  /* унаследовать для кнопки шрифт как и везде */
+}
+
+.btn:hover {
+  opacity: 0.8;
+  /* прозрачность меняется при наведении */
+}
