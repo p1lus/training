@@ -1,0 +1,24 @@
+/* inline, block, inline-block */
+
+.inline li {
+  display: inline;
+  /* элементы li пойдут в строку */
+  /* при block в столбик */
+}
+
+.box {
+  width: 32%;
+  border: 1px solid black;
+  background: #f4f4f4;
+  display: inline-block;
+  /* сохраняется блочность элемента, но уже идёт в строку */
+  box-sizing: border-box;
+}
+
+/* у картинок, ссылок и спана по умолчанию стоит дисплей inline, так что им нельзя менять маржу */
+.img {
+  width: 400px;
+  display: block;
+  /* картинка встанет по центру */
+  margin: 10px auto;
+}
