@@ -1,0 +1,34 @@
+.playground {
+  position: relative;
+  /* при таком значении, дочерний элемент при absolute базируется относительно своего родителя */
+  border: 4px solid black;
+  height: 300px;
+  padding: 20px;
+  /* паддинги при relative не учитываются */
+}
+
+.pos-box {
+  /* position: static; - значение по умолчанию, дочерний связан с родителем */
+  position: absolute;
+  /* left top right bottom - позиционирование вне зависимости от родителя в любой части экрана */
+  /* top: 0;
+  left: 0; */
+  /* position: fixed; - квадратик будет закреплен на экране даже при скроле страницы */
+  width: 50px;
+  height: 50px;
+  background: lawngreen;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* ^ при этих значениях, элемент растянется по экрану */
+  z-index: 3;
+  /* z-index - элемент будет виден поверх остальных */
+}
+
+#header {
+  margin-top: 50px;
+}
