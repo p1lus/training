@@ -7,3 +7,4 @@ here's my test projects in programming
 [cards](https://codepen.io/p1lus/full/yLKGGOm)<br>
 [slides](https://codepen.io/p1lus/full/YzagPGZ)<br>
 [MG page](https://zingy-squirrel-67673c.netlify.app/)
+[some test](https://rococo-centaur-710544.netlify.app/index.html)
