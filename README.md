@@ -8,3 +8,4 @@ here's my test projects in programming
 [slides](https://codepen.io/p1lus/full/YzagPGZ)<br>
 [MG page](https://zingy-squirrel-67673c.netlify.app/)<br>
 [some test](https://rococo-centaur-710544.netlify.app/index.html)<br>
+[dnd](https://codepen.io/p1lus/full/WNzPzJM)<br>
