@@ -1,178 +1,119 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Some prac</title>
-</head>
-<body>
-  <div class="container">
-    <div class="nav-wrapper">
-      <div class="left-side">
-        <div class="nav-link-wrapper active-nav-link">
-          <a href="index.html">Home</a>
-        </div>
-        <div class="nav-link-wrapper">
-          <a href="about.html">About</a>
-        </div>
-      </div>
-      <div class="right-side">
-        <div class="brand">
-          <div>DIMA BHF</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="content-wrapper">
-    <div class="portfolio-items-wrapper">
-      <div class="portfolio-item-wrapper">
-        <div class="portfolio-img-background" style="background-image:url(img/portfolio1.jpg)"></div>
-        <div class="img-text-wrapper">
-          <div class="logo-wrapper">
-            <img class="logo" src="img/logo1.png" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <title>Вопросики</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="https://www.pinclipart.com/picdir/big/140-1409263_help-question-question-button-question-mark-icon-academy.png">
+      <h1>HTML/CSS вопросы</h1>
+      <nav>
+        <ul>
+          <li><a accesskey="s" href="#student-info">ИНФО</a></li>
+          <li><a accesskey="s" href="#html-questions">HTML</a></li>
+          <li><a accesskey="s" href="#css-questions">CSS</a></li>
+			  </ul>
+      </nav>
+    </header>
+    <main>
+      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Общая информация</h2>
+          <div class="info">
+            <label for="student-name">Имя:</label>
+            <input type="text" name="student-name" id="student-name" />
           </div>
-          <div class="subtitle">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, impedit!
+          <div class="info">
+            <label for="student-email">Email:</label>
+            <input type="email" name="student-email" id="student-email" />
           </div>
-        </div>
-      </div>
-      <div class="portfolio-item-wrapper">
-        <div class="portfolio-img-background" style="background-image:url(img/portfolio2.jpg)"></div>
-        <div class="img-text-wrapper">
-          <div class="logo-wrapper">
-            <img class="logo" src="img/logo2.png" alt="">
+          <div class="info">
+            <label for="birth-date">Д.Р.<span class="sr-only">(Дата рождения)</span></label>
+            <input type="date" name="birth-date" id="birth-date" />
           </div>
-          <div class="subtitle">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, impedit!
+        </section>
+        <section role="region" aria-labelledby="html-questions">
+          <h2 id="html-questions">HTML</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="html-question-one">
+              <legend>
+                В строчные элементы можно вписывать блочные элементы
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input type="radio" id="q1-a1" name="q1" value="true" />
+                    Правда
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="q1-a2" name="q1" value="false" />
+                    Ложь
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
           </div>
-        </div>
-      </div>
-      <div class="portfolio-item-wrapper">
-        <div class="portfolio-img-background" style="background-image:url(img/portfolio3.jpg)"></div>
-        <div class="img-text-wrapper">
-          <div class="logo-wrapper">
-            <img class="logo" src="img/logo3.png" alt="">
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question" name="html-question-two">
+              <legend>
+                Каждя веб-страница имеет HTML основу
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input type="radio" id="q2-a1" name="q2" value="true" />
+                    Правда
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input type="radio" id="q2-a2" name="q2" value="false" />
+                    Ложь
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
           </div>
-          <div class="subtitle">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, impedit!
+        </section>
+        <section role="region" aria-labelledby="css-questions">
+          <h2 id="css-questions">CSS</h2>
+          <div class="formrow">
+            <div class="question-block">
+              <label for="customer">Вы программист?</label>
+            </div>
+            <div class="answer">
+              <select name="customer" id="customer" required>
+                <option value="">Выберете одно</option>
+                <option value="yes">Да</option>
+                <option value="no">Нет</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="css-questions">У вас есть какие-то вопросы:</label>
+            </div>
+            <div class="answer">
+              <textarea id="css-questions" name="css-questions" rows="5" cols="24" placeholder="Что такое flexbox..."></textarea>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="portfolio-item-wrapper">
-        <div class="portfolio-img-background" style="background-image:url(img/portfolio4.jpg)"></div>
-        <div class="img-text-wrapper">
-          <div class="logo-wrapper">
-            <img class="logo" src="img/logo4.png" alt="">
-          </div>
-          <div class="subtitle">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, impedit!
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-item-wrapper">
-        <div class="portfolio-img-background" style="background-image:url(img/portfolio5.jpg)"></div>
-        <div class="img-text-wrapper">
-          <div class="logo-wrapper">
-            <img class="logo" src="img/logo5.png" alt="">
-          </div>
-          <div class="subtitle">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, impedit!
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-item-wrapper">
-        <div class="portfolio-img-background" style="background-image:url(img/portfolio6.jpg)"></div>
-        <div class="img-text-wrapper">
-          <div class="logo-wrapper">
-            <img class="logo" src="img/logo6.png" alt="">
-          </div>
-          <div class="subtitle">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, impedit!
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-item-wrapper">
-        <div class="portfolio-img-background" style="background-image:url(img/portfolio7.jpg)"></div>
-        <div class="img-text-wrapper">
-          <div class="logo-wrapper">
-            <img class="logo" src="img/logo7.png" alt="">
-          </div>
-          <div class="subtitle">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, impedit!
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-item-wrapper">
-        <div class="portfolio-img-background" style="background-image:url(img/portfolio8.jpg)"></div>
-        <div class="img-text-wrapper">
-          <div class="logo-wrapper">
-            <img class="logo" src="img/logo8.png" alt="">
-          </div>
-          <div class="subtitle">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, impedit!
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-item-wrapper">
-        <div class="portfolio-img-background" style="background-image:url(img/portfolio9.jpg)"></div>
-        <div class="img-text-wrapper">
-          <div class="logo-wrapper">
-            <img class="logo" src="img/logo9.png" alt="">
-          </div>
-          <div class="subtitle">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, impedit!
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-item-wrapper">
-        <div class="portfolio-img-background" style="background-image:url(img/portfolio10.jpg)"></div>
-        <div class="img-text-wrapper">
-          <div class="logo-wrapper">
-            <img class="logo" src="img/logo10.png" alt="">
-          </div>
-          <div class="subtitle">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, impedit!
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-item-wrapper">
-        <div class="portfolio-img-background" style="background-image:url(img/portfolio11.jpg)"></div>
-        <div class="img-text-wrapper">
-          <div class="logo-wrapper">
-            <img class="logo" src="img/logo11.png" alt="">
-          </div>
-          <div class="subtitle">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, impedit!
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-item-wrapper">
-        <div class="portfolio-img-background" style="background-image:url(img/portfolio12.jpg)"></div>
-        <div class="img-text-wrapper">
-          <div class="logo-wrapper">
-            <img class="logo" src="img/logo1.png" alt="">
-          </div>
-          <div class="subtitle">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, impedit!
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-<script>
-  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
-
-  portfolioItems.forEach(portfolioItems => {
-    portfolioItems.addEventListener('mouseover', () => {
-      portfolioItems.childNodes[1].classList.add('img-darken')
-    })
-      portfolioItems.addEventListener('mouseout', () => {
-      portfolioItems.childNodes[1].classList.remove('img-darken')
-    })
-  })
-</script>
+        </section>
+        <button type="submit">Отправить</button>
+      </form>
+    </main>
+    <footer>
+      <address>
+        <a href="https://www.youtube.com/channel/UCnvdVCI0ji-jUnlkszOlvbg">sloyqeech</a><br />
+        Siberia<br />
+        Krasnoyarsk<br />
+        RUSSIA
+      </address>
+    </footer>
+  </body>
 </html>

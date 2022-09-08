@@ -1,126 +1,185 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin: 0;
+  background: #f5f6f7;
+	color: #1b1b32;
+	font-family: Helvetica;
+	margin: 0;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.nav-wrapper {
-  display: flex;
+header {
+  width: 100%;
+	height: 50px;
+	background-color: #1b1b32;
+	display: flex;
   justify-content: space-between;
-  padding: 38px;
-}
-
-.active-nav-link {
-  border-bottom: 1px solid black;
-}
-
-.active-nav-link a {
-  color: black !important;
-}
-
-.left-side {
-  display: flex;
-}
-
-.nav-wrapper .left-side div {
-  margin-right: 20px;
-  font-size: 0.9em;
-  text-transform: uppercase;
-}
-
-.nav-link-wrapper {
-  height: 22px;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.5s;
-}
-
-.nav-link-wrapper a {
-  color: #8a8a8a;
-  text-decoration: none;
-  transition: color 0.5s;
-}
-
-.nav-link-wrapper:hover {
-  border-bottom: 1px solid black;
-}
-
-.logo {
-  width: 50%;
-  margin-bottom: 20px;
-}
-
-.nav-link-wrapper a:hover {
-  color: black;
-}
-
-.portfolio-items-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.portfolio-item-wrapper {
-  position: relative;
-}
-
-.portfolio-img-background {
-  height: 350px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.img-text-wrapper {
-  position: absolute;
-  display: flex;
-  top: 0;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100%;
+  position: fixed;
+  top: 0;
+}
+
+#logo {
+  width: max(100px, 18vw);
+	background-color: #0a0a23;
+  aspect-ratio: 35 / 4;
+	padding: 0.4rem;
+}
+
+h1 {
+  color: #f1be32;
+	font-size: min(5vw, 1.2em);
   text-align: center;
-  padding-left: 100px;
-  padding-right: 100px;
-  color: antiquewhite;
 }
 
-.img-text-wrapper .subtitle {
-  transition: 1s;
-  font-weight: 600;
-  color: transparent;
+nav {
+  width: 50%;
+	max-width: 300px;
+	height: 50px;
 }
 
-.img-text-wrapper:hover .subtitle {
-  color: darkcyan;
-  font-weight: 600;
+nav > ul {
+  display: flex;
+	justify-content: space-evenly;
+  flex-wrap: wrap;
+	align-items: center;
+	padding-inline-start: 0;
+	margin-block: 0;
+	height: 100%;
 }
 
-.img-darken {
-  transition: 1s;
-  filter: brightness(10%);
+nav > ul > li {
+  color: #dfdfe2;
+  margin: 0 0.2rem;
+	padding: 0.2rem;
+	display: block;
 }
 
-.two-column-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+nav > ul > li:hover {
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;
 }
 
-.profile-image-wrapper img {
-  width: 100%;
+li > a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.profile-content-wrapper {
-  padding: 30px;
+main {
+  padding-top: 50px;
 }
 
-.profile-content-wrapper h1 {
-  color: darkcyan;
+section {
+  width: 80%;
+  margin: 0 auto 10px auto;
+  max-width: 600px;
 }
 
-.profile-content-wrapper p {
-  font-size: 24px;
+h1,
+h2 {
+  font-family: Verdana, Tahoma;
+}
+
+h2 {
+  border-bottom: 4px solid #dfdfe2;
+  margin-top: 0px;
+  padding-top: 60px;
+}
+
+.info {
+  padding: 10px 0 0 5px;
+}
+
+.formrow {
+  margin-top: 30px;
+	padding: 0px 15px;
+}
+
+input {
+  font-size: 16px;
+}
+
+.info label, .info input {
+  display: inline-block;
+  text-align: right;
+}
+
+.info input {
+  width: 50%;
+  text-align: left;
+}
+
+.info label {
+  width: 10%;
+  min-width: 55px;
+}
+
+.question-block {
+  text-align: left;
+	display: block;
+	width: 100%;
+	margin-top: 20px;
+	padding-top: 5px;
+}
+
+p {
+  margin-top: 5px;
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+p::before {
+  content: "Вопрос #";
+}
+
+.question {
+  border: none;
+  padding-bottom: 0;
+}
+
+.answers-list {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+	display: block;
+	margin: 40px auto;
+	width: 40%;
+	padding: 15px;
+	font-size: 23px;
+	background: #d0d0d5;
+	border: 3px solid #3b3b4f;
+}
+
+footer {
+	background-color: #2a2a40;
+	display: flex;
+	justify-content: center;
+}
+
+footer,
+footer a {
+  color: #dfdfe2;
+}
+
+address {
+  text-align: center;
+  padding: 0.3em;
+}
+
+.sr-only {
+  position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
 }
