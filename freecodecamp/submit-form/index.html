@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Форма для регистрации</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Форма для регистрации</h1>
+    <p>Пожалуйста, заполните эту форму необходимой информацией</p>
+    <form action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name">Ваше имя: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Ваша фамилия: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Ваша почта (email): <input id="email" name="email" type="email" required /></label>
+        <label for="new-password">Создайте пароль: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Личный аккаунт</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Бизнесс аккаунт</label>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Я люблю <a href="https://www.youtube.com/channel/UCnvdVCI0ji-jUnlkszOlvbg">смотреть ютубчик</a>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">Загрузите фото профиля: <input id="profile-picture" type="file" name="file" /></label>
+        <label for="age">Введите возраст (лет): <input id="age" type="number" name="age" min="13" max="120" /></label>
+        <label for="referrer">Откуда узнали о нас?
+          <select id="referrer" name="referrer">
+            <option value="">(выберите одно)</option>
+            <option value="1">телеграмм</option>
+            <option value="2">рутуб</option>
+            <option value="3">вк</option>
+            <option value="4">другое</option>
+          </select>
+        </label>
+        <label for="bio">Расскажите о себе:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Я люблю смотреть сериалы..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Отправить" />
+    </form>
+  </body>
+</html>
