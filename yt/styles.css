@@ -1,0 +1,374 @@
+body {
+  margin: 0;
+  padding-top: 68px;
+  padding-left: 86px;
+  padding-right: 14px;
+  background-color: rgb(243, 243, 243);
+}
+
+.sidebar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 56px;
+  background-color: white;
+  width: 72px;
+  border-right: 1px solid rgb(240, 240, 240);
+}
+
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(214, 214, 214);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.05);
+  z-index: 100;
+}
+
+.left-section {
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  height: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.yt-logo {
+  height: 80px;
+}
+
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  flex: 1;
+  height: 35px;
+  font-size: 16px;
+  padding-left: 10px;
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+}
+
+.search-bar::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.search-butt {
+  height: 39px;
+  width: 60px;
+  background-color: rgb(245, 244, 244);
+  border: 1px solid rgb(172, 172, 172);
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  margin-left: -1px;
+  position: relative;
+}
+
+.search-butt:hover {
+  cursor: pointer;
+  background-color: white;
+  transition: .2s;
+}
+
+.tooltip {
+  position: absolute;
+  margin-top: 65px;
+  margin-left: -5px;
+  background-color: rgb(182, 182, 182);
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.search-butt:hover .tooltip {
+  opacity: 1;
+  transition: .3s;
+}
+
+.search-logo {
+  height: 20px;
+  color: rgb(75, 75, 75);
+  opacity: 0.5;
+  margin: auto;
+}
+
+.mic-butt {
+  height: 35px;
+  width: 35px;
+  margin-left: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(245, 244, 244);
+}
+
+.mic-logo {
+  opacity: 0.3;
+  height: 25px;
+  margin-left: -1px;
+  margin-top: 3px;
+}
+
+.right-section {
+  width: 180px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.menu2 {
+  height: 20px;
+  width: 20px;
+}
+
+.notification-container {
+  position: relative;
+}
+
+.notification-count {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  background-color: rgb(224, 66, 66);
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 15px;
+  text-align: center;
+  padding-top: 2px;
+}
+
+.avatar2 {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.sidebar-box {
+  position: relative;
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sidebar-box:hover {
+  background-color: rgb(231, 231, 231);
+  cursor: pointer;
+}
+
+.sidebar-box:hover .tooltip {
+  opacity: 1;
+  transition: .3s;
+}
+
+.sidebar-box img {
+  height: 24px;
+  margin-bottom: 3px;
+}
+
+.sidebar-box div {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+.sub-button {
+  background-color: rgb(180, 0, 0);
+  color: white;
+  border: none;
+  height: 36px;
+  width: 105px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: .2s;
+}
+
+.sub-button:hover {
+  opacity: .8;
+}
+
+.sub-button:active {
+  opacity: .5;
+}
+
+.join-button {
+  background-color: white;
+  border: 1px solid rgb(81, 162, 255);
+  color: rgb(81, 162, 255);
+  height: 36px;
+  width: 62px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.join-button:hover {
+  background-color: rgb(81, 162, 255);
+  color: white;
+}
+
+.join-button:active {
+  opacity: .5;
+}
+
+.tweet-button {
+  background-color: rgb(110, 177, 253);
+  color: white;
+  border: none;
+  height: 36px;
+  width: 74px;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: .2s;
+}
+
+.tweet-button:hover {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: gray;
+  margin-top: 0;
+}
+
+.video-title {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  /* width: 300px; */
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+.video-stats {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.video-author {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.video-description {
+  width: 280px;
+  line-height: 20px;
+  margin-bottom: 100px;
+}
+
+.apple-text {
+  margin-bottom: 50px;
+  font-size: 14px;
+  background-color: rgb(250, 56, 56);
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.shop-link {
+  text-decoration: none;
+  color: white;
+}
+
+.shop-link:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 100%;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.video-logo {
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.video-time {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 4px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+}
+
+.channel-avatar {
+  vertical-align: top;
+}
+
+.avatar {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.video-grid {
+  display: grid;
+  column-gap: 16px;
+  row-gap: 20px;
+}
+
+@media (min-width: 500px) and (max-width: 749px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+    
+  }
+}
+
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
