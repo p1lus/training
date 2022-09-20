@@ -9,3 +9,5 @@ here's my test projects in programming
 [MG page](https://zingy-squirrel-67673c.netlify.app/)<br>
 [some test](https://rococo-centaur-710544.netlify.app/index.html)<br>
 [dnd](https://codepen.io/p1lus/full/WNzPzJM)<br>
+[CSS FLEXBOX](https://splendorous-puppy-d5f491.netlify.app/)<br>
+[YouTube](https://capable-figolla-e0d83e.netlify.app/)<br>
