@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.box {
+  width: 320px;
+  background-color: rgb(27, 27, 27);
+  padding: 30px;
+}
+
+.form-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-switch + .form-switch {
+  margin-top: 25px;
+}
+
+.form-switch-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form-switch-text {
+  color: white;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: color 0.5s ease;
+}
+
+.form-switch-input:checked ~ .form-switch-text {
+  color: lightcoral;
+}
+
+.form-switch-input:disabled ~ .form-switch-text {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.form-switch-slider {
+  height: 30px;
+  width: 50px;
+  border: 1px solid lightgrey;
+  position: relative;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.form-switch-input:checked ~ .form-switch-slider {
+  background-color: lightcoral;
+  border-color: lightcoral;
+}
+
+.form-switch-input:disabled ~ .form-switch-slider {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.form-switch-slider::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: white;
+  transition: transform 0.5s ease;
+}
+
+.form-switch-input:checked ~ .form-switch-slider::before {
+  transform: translateX(calc(100% + 2px));
+}
